@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo{
+  font-family: 'Pacifico';
+  font-size: 35px;
+}
+
+.logo__pat1_green{
+  color: #008966;
+}
