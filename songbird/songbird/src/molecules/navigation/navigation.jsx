@@ -16,9 +16,9 @@ export default class Navigation extends Component{
       'Морские птицы'
     ]
 
-    const readyList = listMenu.map((el)=>{
+    const readyList = listMenu.map((el,index)=>{
       return(
-      <li className="list-group-item">{el}</li>
+      <li key={index} className="list-group-item">{el}</li>
       )
     })
 

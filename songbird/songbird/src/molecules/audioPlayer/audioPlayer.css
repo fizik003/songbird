@@ -1,0 +1,28 @@
+.custom-audio-player{
+  width: 100%;
+}
+
+.rhap_container {
+  background-color: #303030;
+  box-shadow: none;
+  outline: none;
+}
+
+.rhap_main-controls-button, 
+.rhap_progress-indicator,
+.rhap_volume-button,
+.rhap_repeat-button{
+  color: #00bc8c;
+}
+.rhap_main-controls-button:focus,
+.rhap_progress-indicator:focus,
+.rhap_volume-button:focus,
+.rhap_repeat-button:focus{
+  outline: none;
+}
+
+.rhap_progress-filled,
+.rhap_volume-indicator{
+  background-color: #00bc8c;
+}
+

@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
-import Button from './molecules/button/button';
-import Header from './organisms/header/header';
-
-
+import "./App.css";
+import Header from "./organisms/header/header";
+import AudioSection from "./organisms/audioSection/audioSection";
+import RowContent from "./organisms/rowContent/rowContent";
 
 function App() {
   return (
-    <div  className="app-song-bird">
+    <div className="app-song-bird">
       <div className="container">
-        <Header/>
+        <Header />
+        <AudioSection />
+        <RowContent />
       </div>
     </div>
   );
