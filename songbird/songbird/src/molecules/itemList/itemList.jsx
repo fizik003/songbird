@@ -1,22 +1,20 @@
 import React,{ Component } from 'react';
-
+// import birdsData from '../../serviceAndData/birdsData'
 import './itemList.css';
 
 
 export default class ItemList extends Component{
-  render(){
-    let items = [
-      'bird1',
-      'bird2',
-      'bird3',
-    ]
 
-    items = items.map((el, index)=>{
+  render(){
+    const {dataItmeList} = this.props
+    const items = dataItmeList
+    .map(({name,id}, index)=>{
       return(
-        <li key={index} className='list-group-item'>
-          {el}
+        <li  key={id} onClick={()=>this.props.onItemSelected(index)}  className='list-group-item'>
+          {name}
         </li>
       )
+
     })
     return(
       <div className="item-list">

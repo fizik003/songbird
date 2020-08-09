@@ -5,7 +5,9 @@ import './navigation.css';
 
 export default class Navigation extends Component{
   
-
+  state={
+    activeID : 0
+  }
   render(){
     const listMenu = [
       'Разминка',
@@ -15,10 +17,11 @@ export default class Navigation extends Component{
       'Хищные птицы',
       'Морские птицы'
     ]
+    const {activeID} = this.state
 
     const readyList = listMenu.map((el,index)=>{
       return(
-      <li key={index} className="list-group-item">{el}</li>
+      <li key={index} className={`list-group-item  ${index === activeID? 'active': null} `}>{el}</li>
       )
     })
 

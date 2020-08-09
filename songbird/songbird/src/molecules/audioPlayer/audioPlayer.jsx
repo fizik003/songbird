@@ -5,10 +5,12 @@ import './audioPlayer.css';
 
 export default class CustomAudioPlayer extends Component{
   render(){
+    const {srcAudio} = this.props
     return (
       <div className="custom-audio-player">
         <AudioPlayer
-        src="https://www.xeno-canto.org/sounds/uploaded/XIQVMQVUPP/XC518684-Grands%20corbeaux%2009012020%20Suzon.mp3"
+        src={srcAudio}
+        autoPlayAfterSrcChange = {false}
         onPlay={e => console.log("onPlay")}
         />
       </div>
