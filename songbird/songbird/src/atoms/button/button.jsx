@@ -4,8 +4,16 @@ import './button.css';
 
 export default class Button extends Component{
   render(){
+    const {disabled} = this.props
+    let classes = "btn btn-secondary btn-lg btn-block";
+    if (disabled) classes += ' btn-active';
     return(
-      <button type="button" className="btn btn-secondary btn-lg btn-block">Block level button</button>
+      <button 
+        type="button" 
+        className={classes}
+        disabled={!disabled}>
+          Block level button
+      </button>
     )
   }
 }

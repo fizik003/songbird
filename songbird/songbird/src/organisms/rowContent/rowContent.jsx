@@ -9,22 +9,25 @@ export default class RowContent extends Component{
   state ={
     selectItemId : null
   }
+  
 
-  onBirdSelected = (selectItemId)=>{
-    this.setState({selectItemId})
-  }
+  // onBirdSelected = (selectItemId)=>{
+  //   console.log()
+  //   this.setState({selectItemId})
+    
+  // }
 
 
 
 
   render(){
-    const {dataItemList} = this.props;
-    const {selectItemId} = this.state;
+    const {dataItemList, onBirdSelected, selectItemId} = this.props;
+    // const {selectItemId} = this.state;
     const detailItem = dataItemList[selectItemId];
     return(
       <div className="row-content d-flex">
         <ItemList 
-          onItemSelected={this.onBirdSelected} 
+          onItemSelected={onBirdSelected} 
           dataItmeList={dataItemList}/>
           {selectItemId != null? <ItemDetails detailItem={detailItem} />: null}
       </div>
