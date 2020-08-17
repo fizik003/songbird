@@ -11,31 +11,41 @@ import ItemList from "./molecules/itemList/itemList";
 class App extends Component {
   state = {
     birdsGroupId: 0,
-    rightAnswer: false,
+    rightAnswer: null,
     selectItemId: null,
     listItems: null,
     randomBirdId: 5,
   };
 
   componentDidMount() {
-    this.init();
+    this.createListItems();
   }
 
-  init = () => {
+  changeLevel = () => {
     this.setState({
-      ...this.state,
-      listItems: birdsData[0].sort(() => Math.random() - 0.5),
-      randomBirdId: Math.floor(Math.random() * 5),
+      birdsGroupId: (this.state.birdsGroupId += 1),
     });
+    this.createListItems();
+    this.setState({});
+  };
 
-    console.log(this.state);
+  createListItems = () => {
+    const { birdsGroupId } = this.state;
+    this.setState({
+      listItems: birdsData[birdsGroupId].sort(() => Math.random() - 0.5),
+      randomBirdId: Math.floor(Math.random() * 5),
+      rightAnswer: false,
+      selectItemId: null,
+    });
   };
 
   onBirdSelected = (selectItemId) => {
     const { randomBirdId } = this.state;
-    if (selectItemId === randomBirdId) this.setState({ rightAnswer: true });
+    console.log(selectItemId, randomBirdId);
+    if (selectItemId === randomBirdId) {
+      this.setState({ rightAnswer: true });
+    }
     this.setState({ selectItemId });
-    console.log(this.state);
   };
 
   render() {
@@ -61,13 +71,9 @@ class App extends Component {
             dataItemList={listItems}
             onBirdSelected={this.onBirdSelected}
             selectItemId={selectItemId}
+            randomBirdId={randomBirdId}
           />
-          <Button
-            onClick={() => {
-              console.log(this.state);
-            }}
-            disabled={rightAnswer}
-          />
+          <Button onClick={this.changeLevel} disabled={rightAnswer} />
         </div>
       </div>
     );

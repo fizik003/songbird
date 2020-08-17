@@ -2,6 +2,31 @@
   width: 100%;
 }
 
-.item-list .list-group-item{
+.list-group-item{
   cursor: pointer;
+  padding: unset;
 }
+
+.list-group-item:hover{
+  background-color: #444444;
+}
+
+.list-group-item span{
+  display: inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: #444444;
+  margin-right: 10px;
+}
+
+.list-group-item-wrong span{
+  background-color: red;
+
+}
+
+.list-group-item-right span{
+  background-color:#00bc8c;
+
+}
+

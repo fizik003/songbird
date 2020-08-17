@@ -9,7 +9,7 @@ export default class ItemDetails extends Component{
   render(){
     const {name, species, description,image, audio} = this.props.detailItem
     return(
-      <div className="item-details jumbotron rounded">
+      <div className="item-details jumbotron rounded col-6">
         <div className="item-details__content d-flex">
           <BirdImg srcImage={image}/>
           <div className="item-details__player">

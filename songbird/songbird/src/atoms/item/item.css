@@ -1,0 +1,20 @@
+.item span{
+  display: inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: #444444;
+  margin-right: 10px;
+}
+
+.item.right span{
+  background-color:#00bc8c;
+}
+
+.item.wrong span{
+  background-color:red;
+}
+
+.item{
+  padding: 0.75rem 1.25rem;;
+}
