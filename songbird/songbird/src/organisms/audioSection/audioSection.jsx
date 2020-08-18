@@ -11,14 +11,14 @@ export default class AudioSection extends Component{
   render(){
 
     const {dataAudio:{audio, name, image}, showInfoBird} = this.props
-    const hidename = <p style={{fontSize:'36px'}}>******</p>
+    const hidename = <p className='d-flex justify-content-center d-sm-block' style={{fontSize:'36px'}}>******</p>
     return(
-      <div className="audio-section">
-        <div className='jumbotron rounded d-flex'>
+      <div className="audio-section col-12">
+        <div className='jumbotron rounded d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-start'>
           <div className="audio-section__bird-img mr-3">
-          <BirdImg srcImage = {showInfoBird? image : plugBird}/>
+            <BirdImg srcImage = {showInfoBird? image : plugBird}/>
           </div>
-          <div className="audio-section_audio-player">
+          <div className="audio-section_audio-player ">
             <LabelBird name = {showInfoBird? name: hidename} />
             <CustomAudioPlayer srcAudio={audio}/>
           </div>

@@ -6,15 +6,12 @@ import ItemDetails from '../../molecules/itemDetails/itemDetails';
 
 
 export default class RowContent extends Component{
-  state ={
-    selectItemId : null
-  }
 
   render(){
-    const {dataItemList, onBirdSelected, selectItemId, randomBirdId} = this.props;
+    const {dataItemList, onBirdSelected, selectItemId} = this.props;
     const detailItem = dataItemList[selectItemId];
     const plugItem = (
-      <div className='jumbotron rounded col-6 row-content-details' >
+      <div className='jumbotron rounded col-12 row-content-details col-lg-6' >
         <p>
           Послушайте плеер.
           Выберите птицу из списка
@@ -22,11 +19,10 @@ export default class RowContent extends Component{
       </div>
     )
     return(
-      <div className="row-content d-flex">
+      <div className="row-content d-flex mb-4 flex-wrap col-12">
         <ItemList 
           onItemSelected={onBirdSelected} 
-          dataItmeList={dataItemList}
-          randomBirdId={randomBirdId}/>
+          dataItmeList={dataItemList}/>
           {selectItemId != null? <ItemDetails detailItem={detailItem} />: plugItem}
       </div>
 

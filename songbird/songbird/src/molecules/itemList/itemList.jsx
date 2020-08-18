@@ -5,24 +5,20 @@ import Item from '../../atoms/item/item';
 
 
 export default class ItemList extends Component{
-  s = 5;
   render(){
-    const {dataItmeList, onItemSelected,randomBirdId} = this.props
+    const {dataItmeList, onItemSelected} = this.props
     const items = dataItmeList
-    .map(({name,id}, index)=>{
-      
+    .map(({name}, index)=>{
       return(
-        <li key ={name} className="list-group-item">
+        <li key ={name} className="list-group-item my-list-group-item">
           <Item label ={name} 
             onItemSelected={onItemSelected}
-            randomBirdId={randomBirdId}
             selectItemId={index}/>
-            
         </li>
       )
     })
     return(
-      <div className="col-6">
+      <div className="mb-3 col-12 col-sm-12 col-lg-6 mb-lg-0 ">
         <ul className='list-group'>
           {items}
         </ul>

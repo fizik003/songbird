@@ -2,13 +2,14 @@
   width: 100%;
 }
 
-.list-group-item{
+.list-group-item.my-list-group-item{
   cursor: pointer;
   padding: unset;
 }
 
-.list-group-item:hover{
+.list-group-item.my-list-group-item:hover{
   background-color: #444444;
+  
 }
 
 .list-group-item span{

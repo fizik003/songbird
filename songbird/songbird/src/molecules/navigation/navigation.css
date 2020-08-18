@@ -2,10 +2,13 @@
   padding: 0.5rem 1.25rem;
   width: 100%;
   background-color: #008966;
-  cursor: pointer;
   text-align: center;
 }
 
 .navigation  .active {
   background-color: #00bc8c;
+}
+
+.nav-item{
+  white-space: nowrap;
 }

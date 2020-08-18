@@ -7,7 +7,7 @@ export default class NavItem extends Component{
   render(){
     const {label} = this.props
     return(
-    <li className="list-group-item">{label}</li>
+    <li className="list-group-item nav-item">{label}</li>
     )
   }
 }

@@ -15,6 +15,8 @@ class App extends Component {
     selectItemId: null,
     listItems: null,
     randomBirdId: 5,
+    score: 0,
+    amountOfPoints: 5,
   };
 
   componentDidMount() {
@@ -24,9 +26,9 @@ class App extends Component {
   changeLevel = () => {
     this.setState({
       birdsGroupId: (this.state.birdsGroupId += 1),
+      amountOfPoints: 5,
     });
     this.createListItems();
-    this.setState({});
   };
 
   createListItems = () => {
@@ -39,11 +41,22 @@ class App extends Component {
     });
   };
 
-  onBirdSelected = (selectItemId) => {
-    const { randomBirdId } = this.state;
+  onBirdSelected = (selectItemId, e) => {
+    const { randomBirdId, score, amountOfPoints, rightAnswer } = this.state;
     console.log(selectItemId, randomBirdId);
     if (selectItemId === randomBirdId) {
-      this.setState({ rightAnswer: true });
+      if (!e.target.classList.contains("right")) {
+        e.target.classList.add("right");
+        this.setState({
+          rightAnswer: true,
+          score: score + amountOfPoints,
+        });
+      }
+    } else if (!e.target.classList.contains("wrong")) {
+      e.target.classList.add("wrong");
+      this.setState({
+        amountOfPoints: amountOfPoints - 1,
+      });
     }
     this.setState({ selectItemId });
   };
@@ -55,6 +68,8 @@ class App extends Component {
       selectItemId,
       randomBirdId,
       listItems,
+      score,
+      amountOfPoints,
     } = this.state;
 
     if (!listItems) return null;
@@ -62,7 +77,7 @@ class App extends Component {
     return (
       <div className="app-song-bird">
         <div className="container">
-          <Header />
+          <Header selectNavItem={birdsGroupId} score={score} />
           <AudioSection
             dataAudio={listItems[randomBirdId]}
             showInfoBird={rightAnswer}
@@ -71,7 +86,6 @@ class App extends Component {
             dataItemList={listItems}
             onBirdSelected={this.onBirdSelected}
             selectItemId={selectItemId}
-            randomBirdId={randomBirdId}
           />
           <Button onClick={this.changeLevel} disabled={rightAnswer} />
         </div>
