@@ -11,7 +11,7 @@ import WinComponent from "./organisms/winComponent/winComponent";
 
 class App extends Component {
   state = {
-    birdsGroupId: 5,
+    birdsGroupId: 0,
     rightAnswer: null,
     selectItemId: null,
     listItems: null,
@@ -30,6 +30,11 @@ class App extends Component {
 
   componentDidMount() {
     this.createListItems();
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.birdsGroupId == 6 && this.state.birdsGroupId === 0) {
+      this.createListItems();
+    }
   }
 
   changeLevel = () => {
@@ -76,10 +81,7 @@ class App extends Component {
   };
 
   restartGame = () => {
-    this.setState({
-      birdsGroupId: 0,
-    });
-    this.changeLevel();
+    this.setState({ birdsGroupId: 0 });
     console.log(this.state);
   };
 

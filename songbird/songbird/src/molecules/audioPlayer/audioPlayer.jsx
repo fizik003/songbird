@@ -12,6 +12,7 @@ export default class CustomAudioPlayer extends Component{
         src={srcAudio}
         autoPlayAfterSrcChange = {false}
         onPlay={e => console.log("onPlay")}
+        showJumpControls ={false}
         />
       </div>
     ) 

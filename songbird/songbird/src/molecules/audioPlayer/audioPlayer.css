@@ -11,7 +11,8 @@
 .rhap_main-controls-button, 
 .rhap_progress-indicator,
 .rhap_volume-button,
-.rhap_repeat-button{
+.rhap_repeat-button,
+.rhap_time{
   color: #00bc8c;
 }
 .rhap_main-controls-button:focus,
