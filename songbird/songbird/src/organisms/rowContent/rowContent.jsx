@@ -11,7 +11,7 @@ export default class RowContent extends Component{
     const {dataItemList, onBirdSelected, selectItemId} = this.props;
     const detailItem = dataItemList[selectItemId];
     const plugItem = (
-      <div className='jumbotron rounded col-12 row-content-details col-lg-6' >
+      <div className='jumbotron rounded col-12 row-content-details col-lg-6 ' >
         <p>
           Послушайте плеер.
           Выберите птицу из списка

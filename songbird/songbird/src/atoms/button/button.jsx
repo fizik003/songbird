@@ -4,7 +4,7 @@ import './button.css';
 
 export default class Button extends Component{
   render(){
-    const {disabled, onClick} = this.props
+    const {disabled, onClick, label} = this.props
     let classes = "btn btn-secondary btn-lg btn-block";
     if (disabled) classes += ' btn-active';
     return(
@@ -14,7 +14,7 @@ export default class Button extends Component{
           className={classes}
           disabled={!disabled}
           onClick={onClick}>
-          Block level button
+          {label}
         </button>
       </div>
     )

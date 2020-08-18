@@ -7,10 +7,11 @@ import RowContent from "./organisms/rowContent/rowContent";
 import Button from "./atoms/button/button";
 import birdsData from "./serviceAndData/birdsData";
 import ItemList from "./molecules/itemList/itemList";
+import WinComponent from "./organisms/winComponent/winComponent";
 
 class App extends Component {
   state = {
-    birdsGroupId: 0,
+    birdsGroupId: 5,
     rightAnswer: null,
     selectItemId: null,
     listItems: null,
@@ -18,17 +19,30 @@ class App extends Component {
     score: 0,
     amountOfPoints: 5,
   };
+  listMenu = [
+    "Разминка",
+    "Воробьиные",
+    "Лесные птицы",
+    "Певчие птицы",
+    "Хищные птицы",
+    "Морские птицы",
+  ];
 
   componentDidMount() {
     this.createListItems();
   }
 
   changeLevel = () => {
-    this.setState({
-      birdsGroupId: (this.state.birdsGroupId += 1),
-      amountOfPoints: 5,
-    });
-    this.createListItems();
+    if (this.state.birdsGroupId != this.listMenu.length - 1) {
+      this.setState({
+        birdsGroupId: (this.state.birdsGroupId += 1),
+        amountOfPoints: 5,
+      });
+      this.createListItems();
+      console.log(this.state);
+    } else {
+      this.setState({ birdsGroupId: (this.state.birdsGroupId += 1) });
+    }
   };
 
   createListItems = () => {
@@ -61,6 +75,14 @@ class App extends Component {
     this.setState({ selectItemId });
   };
 
+  restartGame = () => {
+    this.setState({
+      birdsGroupId: 0,
+    });
+    this.changeLevel();
+    console.log(this.state);
+  };
+
   render() {
     const {
       birdsGroupId,
@@ -73,21 +95,40 @@ class App extends Component {
     } = this.state;
 
     if (!listItems) return null;
+    const lenMenu = this.listMenu.length;
+
+    const mainContent = (
+      <div>
+        <AudioSection
+          dataAudio={listItems[randomBirdId]}
+          showInfoBird={rightAnswer}
+        />
+        <RowContent
+          dataItemList={listItems}
+          onBirdSelected={this.onBirdSelected}
+          selectItemId={selectItemId}
+        />
+        <Button
+          onClick={this.changeLevel}
+          disabled={rightAnswer}
+          label={"next level"}
+        />
+      </div>
+    );
 
     return (
       <div className="app-song-bird">
         <div className="container">
-          <Header selectNavItem={birdsGroupId} score={score} />
-          <AudioSection
-            dataAudio={listItems[randomBirdId]}
-            showInfoBird={rightAnswer}
+          <Header
+            selectNavItem={birdsGroupId}
+            score={score}
+            listMenu={this.listMenu}
           />
-          <RowContent
-            dataItemList={listItems}
-            onBirdSelected={this.onBirdSelected}
-            selectItemId={selectItemId}
-          />
-          <Button onClick={this.changeLevel} disabled={rightAnswer} />
+          {birdsGroupId === lenMenu ? (
+            <WinComponent score={score} onClick={this.restartGame} />
+          ) : (
+            mainContent
+          )}
         </div>
       </div>
     );

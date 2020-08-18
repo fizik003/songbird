@@ -15,27 +15,20 @@ export default class Navigation extends Component{
   //   this.setState({activeID: selectNavItem})
   // }
   render(){
-    const {selectNavItem} = this.props
-    const listMenu = [
-      'Разминка',
-      'Воробьиные',
-      'Лесные птицы',
-      'Певчие птицы',
-      'Хищные птицы',
-      'Морские птицы'
-    ]
+    const {selectNavItem,listMenu} = this.props
+    
     const {activeID} = this.state
     
     const readyList = listMenu.map((el,index)=>{
       return(
-      <li key={index} className={`list-group-item nav-item  ${index === selectNavItem? 'active': null} `}>{el}</li>
+      <li key={index} className={`list-group-item nav-item   ${index === selectNavItem? 'active': null} `}>{el}</li>
       )
     })
 
 
     return (
-      <div className="navigation">
-        <ul className="list-group list-group-horizontal d-flex">
+      <div className="navigation ">
+        <ul className="list-group list-group-horizontal d-flex flex-wrap flex-lg-nowrap">
           {readyList}
         </ul>
       </div>
