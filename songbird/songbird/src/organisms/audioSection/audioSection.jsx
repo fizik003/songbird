@@ -12,6 +12,7 @@ export default class AudioSection extends Component{
 
     const {dataAudio:{audio, name, image}, showInfoBird} = this.props
     const hidename = <p className='d-flex justify-content-center d-sm-block' style={{fontSize:'36px'}}>******</p>
+    const rightAudioLink = "https://a1.dlshare.net//sdh/d2/81/05/7268369_240099294.mp3"
     return(
       <div className="audio-section col-12">
         <div className='jumbotron rounded d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-start'>
@@ -20,7 +21,10 @@ export default class AudioSection extends Component{
           </div>
           <div className="audio-section_audio-player ">
             <LabelBird name = {showInfoBird? name: hidename} />
-            <CustomAudioPlayer srcAudio={audio}/>
+            <CustomAudioPlayer 
+              srcAudio={showInfoBird? rightAudioLink: audio}
+              autoPlay={showInfoBird}
+            />
           </div>
         </div>
       </div>

@@ -18,7 +18,10 @@ export default class ItemDetails extends Component{
           <div className="item-details__player d-flex d-sm-block flex-column w-100 align-items-center">
             <h5>{name}</h5>
             <h6>{species}</h6>
-            <CustomAudioPlayer srcAudio={audio}/>
+            <CustomAudioPlayer 
+              srcAudio={audio}
+              autoPlay={false}
+            />
           </div>
         </div>
         <div className="item-details__text">

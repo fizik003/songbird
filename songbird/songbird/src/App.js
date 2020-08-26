@@ -63,25 +63,36 @@ class App extends Component {
   onBirdSelected = (selectItemId, e) => {
     const { randomBirdId, score, amountOfPoints, rightAnswer } = this.state;
     console.log(selectItemId, randomBirdId);
-    if (selectItemId === randomBirdId) {
-      if (!e.target.classList.contains("right")) {
-        e.target.classList.add("right");
+    if (!rightAnswer) {
+      if (selectItemId === randomBirdId) {
+        if (!e.target.classList.contains("right")) {
+          e.target.classList.add("right");
+          this.setState({
+            rightAnswer: true,
+            score: score + amountOfPoints,
+          });
+        }
+      } else if (!e.target.classList.contains("wrong")) {
+        e.target.classList.add("wrong");
+        const audio = new Audio(
+          "https://sound-pack.net/download/Sound_11118.wav"
+        );
+
+        audio.play();
         this.setState({
-          rightAnswer: true,
-          score: score + amountOfPoints,
+          amountOfPoints: amountOfPoints - 1,
         });
       }
-    } else if (!e.target.classList.contains("wrong")) {
-      e.target.classList.add("wrong");
-      this.setState({
-        amountOfPoints: amountOfPoints - 1,
-      });
     }
     this.setState({ selectItemId });
   };
 
   restartGame = () => {
-    this.setState({ birdsGroupId: 0 });
+    this.setState({
+      birdsGroupId: 0,
+      score: 0,
+      amountOfPoints: 5,
+    });
     console.log(this.state);
   };
 

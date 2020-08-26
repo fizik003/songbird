@@ -5,12 +5,12 @@ import './audioPlayer.css';
 
 export default class CustomAudioPlayer extends Component{
   render(){
-    const {srcAudio} = this.props
+    const {srcAudio,autoPlay} = this.props
     return (
       <div className="custom-audio-player">
         <AudioPlayer
         src={srcAudio}
-        autoPlayAfterSrcChange = {false}
+        autoPlayAfterSrcChange = {autoPlay}
         onPlay={e => console.log("onPlay")}
         showJumpControls ={false}
         />

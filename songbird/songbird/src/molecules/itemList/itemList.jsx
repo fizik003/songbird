@@ -18,7 +18,7 @@ export default class ItemList extends Component{
       )
     })
     return(
-      <div className="mb-3 col-12 col-sm-12 col-lg-6 mb-lg-0 ">
+      <div className="mb-3 col-12 col-sm-12 col-lg-6 mb-lg-0 pl-0 pr-lg-3 pr-sm-0">
         <ul className='list-group'>
           {items}
         </ul>
