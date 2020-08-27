@@ -44,7 +44,6 @@ class App extends Component {
         amountOfPoints: 5,
       });
       this.createListItems();
-      console.log(this.state);
     } else {
       this.setState({ birdsGroupId: (this.state.birdsGroupId += 1) });
     }
@@ -52,17 +51,20 @@ class App extends Component {
 
   createListItems = () => {
     const { birdsGroupId } = this.state;
+    const listItems = birdsData[birdsGroupId].sort(() => Math.random() - 0.5);
+    const randomBirdId = Math.floor(Math.random() * 5);
     this.setState({
-      listItems: birdsData[birdsGroupId].sort(() => Math.random() - 0.5),
-      randomBirdId: Math.floor(Math.random() * 5),
+      listItems,
+      randomBirdId,
       rightAnswer: false,
       selectItemId: null,
     });
+
+    console.log(listItems[randomBirdId].name);
   };
 
   onBirdSelected = (selectItemId, e) => {
     const { randomBirdId, score, amountOfPoints, rightAnswer } = this.state;
-    console.log(selectItemId, randomBirdId);
     if (!rightAnswer) {
       if (selectItemId === randomBirdId) {
         if (!e.target.classList.contains("right")) {
@@ -93,7 +95,6 @@ class App extends Component {
       score: 0,
       amountOfPoints: 5,
     });
-    console.log(this.state);
   };
 
   render() {
@@ -109,9 +110,10 @@ class App extends Component {
 
     if (!listItems) return null;
     const lenMenu = this.listMenu.length;
+    // console.log(listItems[randomBirdId].name);
 
     const mainContent = (
-      <div>
+      <div className="mb-3">
         <AudioSection
           dataAudio={listItems[randomBirdId]}
           showInfoBird={rightAnswer}

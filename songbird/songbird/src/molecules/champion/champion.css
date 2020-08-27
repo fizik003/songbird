@@ -1,0 +1,32 @@
+.champion__congratulations {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.champion__scroe{
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: solid 4px #008966;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #008966;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.champion__text{
+  color: #008966;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.champion__repeate-text{
+  text-align: justify;
+}
