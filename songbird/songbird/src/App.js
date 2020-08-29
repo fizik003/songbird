@@ -5,8 +5,8 @@ import Header from "./organisms/header/header";
 import AudioSection from "./organisms/audioSection/audioSection";
 import RowContent from "./organisms/rowContent/rowContent";
 import Button from "./atoms/button/button";
-import birdsData from "./serviceAndData/birdsData";
-import ItemList from "./molecules/itemList/itemList";
+import { birdsData, birdsCategity } from "./serviceAndData/birdsData";
+import { myBirdsData, myCategory } from "./serviceAndData/myBirdsData";
 import WinComponent from "./organisms/winComponent/winComponent";
 
 class App extends Component {
@@ -18,15 +18,9 @@ class App extends Component {
     randomBirdId: 5,
     score: 0,
     amountOfPoints: 5,
+    hardMode: true,
   };
-  listMenu = [
-    "Разминка",
-    "Воробьиные",
-    "Лесные птицы",
-    "Певчие птицы",
-    "Хищные птицы",
-    "Морские птицы",
-  ];
+  listMenu = myCategory;
 
   componentDidMount() {
     this.createListItems();
@@ -36,6 +30,12 @@ class App extends Component {
       this.createListItems();
     }
   }
+
+  changeDificul = (value) => {
+    this.setState({ hardMode: value });
+    console.log(value);
+    console.log(this.state.hardMode);
+  };
 
   changeLevel = () => {
     if (this.state.birdsGroupId != this.listMenu.length - 1) {
@@ -51,7 +51,7 @@ class App extends Component {
 
   createListItems = () => {
     const { birdsGroupId } = this.state;
-    const listItems = birdsData[birdsGroupId].sort(() => Math.random() - 0.5);
+    const listItems = myBirdsData[birdsGroupId].sort(() => Math.random() - 0.5);
     const randomBirdId = Math.floor(Math.random() * 5);
     this.setState({
       listItems,
@@ -126,7 +126,7 @@ class App extends Component {
         <Button
           onClick={this.changeLevel}
           disabled={rightAnswer}
-          label={"next level"}
+          label={"Cледующий уровень"}
         />
       </div>
     );

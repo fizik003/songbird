@@ -21,13 +21,13 @@ export default class Navigation extends Component{
     
     const readyList = listMenu.map((el,index)=>{
       return(
-      <li key={index} className={`list-group-item nav-item   ${index === selectNavItem? 'active': null} `}>{el}</li>
+      <li key={el} className={`list-group-item nav-item   ${index === selectNavItem? 'active': null} `}>{el}</li>
       )
     })
 
 
     return (
-      <div className="navigation ">
+      <div className="navigation">
         <ul className="list-group list-group-horizontal d-flex flex-wrap flex-lg-nowrap">
           {readyList}
         </ul>
