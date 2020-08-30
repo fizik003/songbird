@@ -35,11 +35,11 @@
   display: none;
 }
 
-/* .rhap_volume-controls {
+.rhap_volume-controls {
   justify-content: flex-start;
 }
 
-.rhap_stacked .rhap_controls-section {
+/* .rhap_stacked .rhap_controls-section {
   margin-top: 0;
   margin-right: 10px;
 } */
