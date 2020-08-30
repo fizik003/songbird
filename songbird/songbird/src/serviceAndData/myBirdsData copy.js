@@ -7,7 +7,8 @@ const myBirdsData = [
       description:
         "Самая крупная из палеарктических поганок. Брачный наряд отличается особенным, очень ярким украшением на голове. Зимой два пучка перьевых «ушек» и воротничок пропадают, по является легко заметная белая бровь. Половой диморфизм выражен слабо.",
       image: "https://www.ebirds.ru/images/large/4.jpg",
-      audio: "https://my-files.su/Save/sfm6jw/bolsha-poganka.mp3",
+      audio:
+        "http://kino-server.myjino.ru/mp3/lat-podiceps-cristatus-2425-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -17,7 +18,7 @@ const myBirdsData = [
         "Эту утку можно у жать по форме клюва, заметно утолщённого к основанию, по длинному и жёсткому хвосту, который белоголовая савка часто держит поднятым вверх, и по окраске головы: чёрно-белой у самца, бурой, с белой центральной полоской у самки. Крылья каких-либо особых отличительных признаков не имеют.",
       image: "https://www.ebirds.ru/images/large/49.jpg",
       audio:
-        "https://my-files.su/Save/4oxnus/savka-belogolovaya-golos-5979-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/savka-belogolovaya-golos-5979-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -27,7 +28,7 @@ const myBirdsData = [
         "Несколько крупнее чёрной крачки (Chlidonias nigra), крылья и лапы длиннее, клюв чуть больше. В брачном наряде заметен контраст между чёрным верхом головы и белыми «щеками», низ тела аспидно-серый, на хвосте небольшая «вилочка», перепонка на лапах заметно уже, чем у предыдущих видов. В зимнем пере у птиц чёрный цвет остаётся на затылке и в виде крапа на темени. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/134.jpg",
       audio:
-        "https://my-files.su/Save/h5r791/krachka-beloschekaya-golos-2139-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/krachka-beloschekaya-golos-2139-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -37,7 +38,7 @@ const myBirdsData = [
         "Отличается большими размерами и чёрным с синеватым блеском оперением с зоной белого цвета на подбородке, горле и кроющих уха, на бедре имеется круглое белое пятно. В зимнем наряде белые участки исчезают, окраска оперения становится матовой. Обладает мощным крючковатым клювом, радужная оболочка глаза изумрудного цвета. Полового диморфизма нет. У молодых птиц нижняя часть тела беловатая.",
       image: "https://www.ebirds.ru/images/large/12.jpg",
       audio:
-        "https://my-files.su/Save/ajlkq9/baklan-bolshoy-golos-1194-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/baklan-bolshoy-golos-1194-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -47,7 +48,7 @@ const myBirdsData = [
         "Пастушок мелких размеров, отличающийся буро-оливковой верхней частью тела, густо покрытой чёрными продольными пестринами. Передняя часть головы, горло и грудь серо-голубого цвета, на боках белые и чёрные полосы, подхвостье беловатое, красный клюв длинный и слегка изогнут книзу.",
       image: "https://www.ebirds.ru/images/large/85.jpg",
       audio:
-        "https://my-files.su/Save/mtbk3e/pastushok-vodyanoy-golos-570-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/pastushok-vodyanoy-golos-570-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -57,7 +58,7 @@ const myBirdsData = [
         "Этот вид легко узнаётся благодаря однотонному переливчатому тёмному оперению и загнутому книзу, как у кроншнепа, клюву Полового диморфизма нет. У молодых птиц, а также у взрослых особей зимой на голове и шее наблюдаются характерные светлые пятнышки.",
       image: "https://www.ebirds.ru/images/large/25.jpg",
       audio:
-        "https://my-files.su/Save/mvuutf/karavayka-golos-1841-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/karavayka-golos-1841-onbird.ru.mp3",
     },
   ],
   [
@@ -69,7 +70,7 @@ const myBirdsData = [
         "Птица крупных размеров, с крепким телосложением и «грозным» взглядом. Отличается грязно-бурым оперением с яркими белыми основаниями первостепенных маховых перьев крыла, хорошо заметными в полёте; короткими, но сильными клювом и лапами; широким клинообразным хвостом со слегка выступающими центральными рулевыми перьями. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/118.jpg",
       audio:
-        "https://my-files.su/Save/5yxas7/bolshoy-pomornik-stercorarius-skua-7207-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/bolshoy-pomornik-stercorarius-skua-7207-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -78,7 +79,7 @@ const myBirdsData = [
       description:
         "Голова и клюв крупнее, чем у тонкоклювой кайры, от лба до глаза тянется белая полоса Клюв чёрный сжат с боков, имеет белое кольцо. Верх тела, голова и горло чёрно-бурые, поперёк крыла проходит белая линия Зимой передняя часть шеи, горло, «щёки» белые. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/137.jpg",
-      audio: "https://my-files.su/Save/3oj072/gagarka-golos-925-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/gagarka-golos-925-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -88,7 +89,7 @@ const myBirdsData = [
         "Кулик мелких размеров, довольно упитанный на вид. Верхняя часть тела светло-каштановая, нижняя же белая, имеется чёрный «галстук» в области зоба, жёлтый с чёрным концом клюв и короткие жёлто-оранжевые лапы. В полёте на крыльях заметна белая полоса. Половой диморфизм не выражен.",
       image: "https://www.ebirds.ru/images/large/100.jpg",
       audio:
-        "https://my-files.su/Save/hb4kjb/galstuchnik-charadrius-hiaticula-3923-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/galstuchnik-charadrius-hiaticula-3923-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -98,7 +99,7 @@ const myBirdsData = [
         "Меньше галстучника, обладает покровительственной окраской, благодаря покрою практически незаметен: верхняя часть тела песочного цвета, нижняя же белая; чёрный «галстук» прерывается спереди шеи; клюв и лапы чёрные. В полёте на крыльях можно разглядеть тонкую светлую линию Половой диморфизм не выражен.",
       image: "https://www.ebirds.ru/images/large/101.jpg",
       audio:
-        "https://my-files.su/Save/4u2h7e/zuek-morskoy-golos-1865-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/zuek-morskoy-golos-1865-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -108,7 +109,7 @@ const myBirdsData = [
         "Крупный представитель рода. С виду несколько коренастая птица, большая часть цевки лишена перьев, короткий клиновидный хвост имеет белую окраску у взрослых особей и тёмную у молодых Общий тон оперения буроватый, более светлый на голове и шее. В полёте видны широкие крылья, по сравнению с остальным телом выделяется шея. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/53.jpg",
       audio:
-        "https://my-files.su/Save/gxxvaa/orlan-belohvost-golos-2203-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/orlan-belohvost-golos-2203-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -117,7 +118,7 @@ const myBirdsData = [
       description:
         "Типичный представитель семейства соколиных, плотного сложения, с коротким хвостом, крупной головой и заострёнными концами крыльев. Верхняя часть тела шиферно-чёрная, нижняя же светлая, с тёмными продольными пестринами и поперечными полосками, имеются длинные тёмные «усы». Оперение молодых сверху имеет бурый оттенок, бока и брюшко с продольными отметинами.",
       image: "https://www.ebirds.ru/images/large/74.jpg",
-      audio: "https://my-files.su/Save/pu8toe/sapsan-golos-6052-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/sapsan-golos-6052-onbird.ru.mp3",
     },
   ],
   [
@@ -129,7 +130,7 @@ const myBirdsData = [
         "Гриф крупных размеров, светло бурого цвета, с длинной шеей, покрытой тонким беловатым пухом и украшенной белым, а у молодых бурым воротником Голова маленькая, клюв мощный. В полёте его можно узнать по широким пальцеобразным крыльям и по короткому хвосту квадратной формы. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/56.jpg",
       audio:
-        "https://my-files.su/Save/j4w6tu/belogolovyy-sip-gyps-fulvus-3271-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/belogolovyy-sip-gyps-fulvus-3271-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -138,7 +139,7 @@ const myBirdsData = [
       description:
         "Самый крупный орёл. Оперение взрослых особей равномерного бурого цвета, голова и затылок рыжевато-золотистые, в то время как молодые имеют более тёмную окраску с белыми участками на хвосте и крыльях, которые через 3-4 года исчезают. В полёте виден закруглённый хвост, длина которого почти равна ширине крыльев. Самка беркута значительно крупнее.",
       image: "https://www.ebirds.ru/images/large/65.jpg",
-      audio: "https://my-files.su/Save/6ch22eb/berkut-golos-6615-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/berkut-golos-6615-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -148,7 +149,7 @@ const myBirdsData = [
         "Как и садовая овсянка, имеет рыжеватое брюшко, в окраске оперения отсутствуют оливковые и жёлтые тона. Верх тела напоминает таковой у лесной завирушки, имеет характерный рисунок и расцветку головы: пепельно-серую с чёрными продольными полосами у самца, серо-бурую с буроватыми полосами у самки. ",
       image: "https://www.ebirds.ru/images/large/286.jpg",
       audio:
-        "https://my-files.su/Save/0ou5k6/ovsyanka-gornaya-golos-2224-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/ovsyanka-gornaya-golos-2224-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -158,7 +159,7 @@ const myBirdsData = [
         "Птица характерной формы и окраски, в полёте напоминает крупную разноцветную «бабочку». Раскрытые крылья закруглённые, ярко окрашенные: маховые перья черноватые, украшены двойной серией белых овальных пятен, в контрасте с яркими малиново-красными кроющими крыла. В брачном наряде горло и передняя часть «щёк» чёрные. Клюв длинный и тонкий, слегка изогнутый.",
       image: "https://www.ebirds.ru/images/large/248.jpg",
       audio:
-        "https://my-files.su/Save/q5d656/stenolaz-krasnokrylyy-golos-1155-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/stenolaz-krasnokrylyy-golos-1155-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -168,7 +169,7 @@ const myBirdsData = [
         "Очень крупная сова с длинными пучками перьев — «ушками» и большими ярко-оранжевыми глазами Окраской тела напоминает ушастую сову — общий тон оперения желтовато-коричневый, рыжеватый, с крупными продольными отметинами и поперечным струйчатым рисунком чёрного цвета. Лапы мощные, оперены полностью до острых, загнутых книзу когтей.",
       image: "https://www.ebirds.ru/images/large/149.jpg",
       audio:
-        "https://my-files.su/Save/x2e4su/filin-obyknovennyy-golos-5904-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/filin-obyknovennyy-golos-5904-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -178,7 +179,7 @@ const myBirdsData = [
         "Мелкий по сравнению с другими грифами хищник, которого можно узнать по чёрно-белой окраске взрослых особей и по участку голой кожи на голове. Затылок и шея украшены длинными заострёнными перьями. Хвост белый, клиновидный. Полового диморфизма нет, у молодых оперение тёмно-бурое.",
       image: "https://www.ebirds.ru/images/large/55.jpg",
       audio:
-        "https://my-files.su/Save/5j67gf/stervyatnik-golos-1724-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/stervyatnik-golos-1724-onbird.ru.mp3",
     },
   ],
   [
@@ -190,7 +191,7 @@ const myBirdsData = [
         "Основная окраска оперения контрастная бело чёрная, с красным подхвостьем У самца затылок красный, у самки чёрный. У молодых птиц верх головы полностью красный, как у среднего пёстрого дятла. Хвост жёсткий, клиновидной формы, лапа типичная для дятлов, зигодактильная",
       image: "https://www.ebirds.ru/images/large/168.jpg",
       audio:
-        "https://my-files.su/Save/xawjg2/dyatel-bolshoy-pestryy-golos-1907-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/dyatel-bolshoy-pestryy-golos-1907-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -200,7 +201,7 @@ const myBirdsData = [
         "Крупный кулик с мощным телосложением и покровительственной окраской, отличающейся чрезвычайно разнообразной цветовой гаммой. Клюв длинный, лапы светлые Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/108.jpg",
       audio:
-        "https://my-files.su/Save/ednson/valdshnep-golos-6772-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/valdshnep-golos-6772-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -209,7 +210,8 @@ const myBirdsData = [
       description:
         "Птица легко узнаётся по буроватому наряду с частыми крупными белыми пестринами, немного напоминающему зимнее оперение обыкновенного скворца: за такую расцветку японцы прозвали кедровку «звёздным вороном». Хвост относительно крыльев короткий, что придаёт птице, особенно летящей, собранный компактный вид. Клюв различной длины и высоты, в зависимости от подвида. ",
       image: "https://www.ebirds.ru/images/large/258.jpg",
-      audio: "https://my-files.su/Save/mtp7k9/kedrovka-golos-993-onbird.ru.mp3",
+      audio:
+        "http://kino-server.myjino.ru/mp3/kedrovka-golos-993-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -219,7 +221,7 @@ const myBirdsData = [
         "Птица с уникальным строением клюва: надклювье и подклювье перекрещиваются. Окраска оперения варьирует в зависимости от пола и возраста. Взрослые самцы кирпично-красного цвета, но до приобретения окончательной окраски проходят несколько промежуточных цветовых фаз: жёлто-зеленоватую и розово-оранжевую.",
       image: "https://www.ebirds.ru/images/large/280.jpg",
       audio:
-        "https://my-files.su/Save/wh9p1p/klest-elovik-golos-637-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/klest-elovik-golos-637-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -229,7 +231,7 @@ const myBirdsData = [
         "Хищная птица средних размеров, довольно изящная, имеет удлинённые крылья и узкий длинный, чрезвычайно подвижный хвост, с более глубокой выемкой на конце, чем у чёрного коршуна. Оперение красновато-рыжего цвета, голова серая с тёмными пестринами, хвост рыжеватый. Внутренняя часть крыла отличается характерным светло-тёмным рисунком. ",
       image: "https://www.ebirds.ru/images/large/52.jpg",
       audio:
-        "https://my-files.su/Save/ftgr3d/korshun-krasnyy-golos-936-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/korshun-krasnyy-golos-936-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -238,7 +240,7 @@ const myBirdsData = [
       description:
         "Довольно крупный представитель семейства с ярко выраженным половым диморфизмом: у самца низ тела, «щёки» и шея с боков красноватые, у самки же эти части окрашены в серо-винный цвет. Верх головы и хвост чёрные, поясница белая. Клюв короткий и толстый.",
       image: "https://www.ebirds.ru/images/large/281.jpg",
-      audio: "https://my-files.su/Save/u8tqlf/snegir-golos-1120-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/snegir-golos-1120-onbird.ru.mp3",
     },
   ],
   [
@@ -250,7 +252,7 @@ const myBirdsData = [
         "Кулик крупных размеров, отличающийся серо-бурым с тёмными пестринами оперением и длинным клювом В полёте на крыльях становятся заметны белые полосы и белый с чёрным на конце хвост, из-за которого выступают лапы. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/109.jpg",
       audio:
-        "https://my-files.su/Save/13k05j/veretennik-bolshoy-golos-1885-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/veretennik-bolshoy-golos-1885-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -260,7 +262,7 @@ const myBirdsData = [
         "Птица небольших размеров, с изящным телом и длинным хвостом. Выражен половой диморфизм: у самца низ тела жёлтый, спина зеленовато-оливковая (окраска и рисунок головы сильно варьируют и являются основными критериями для выделения многочисленных подвидов); самка имеет буро-рыжеватый (с зелёным!) оттенок верха и беловатый низ.",
       image: "https://www.ebirds.ru/images/large/186.jpg",
       audio:
-        "https://my-files.su/Save/nvp8m2/tryasoguzka-zheltaya-golos-382-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/tryasoguzka-zheltaya-golos-382-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -270,7 +272,7 @@ const myBirdsData = [
         "Довольно изящная птица средних размеров. Два центральных рулевых пера хвоста длинные и заострённые По окраске оперения различают 2 морфы: тёмную и светлую. Беловатая нижняя часть тела контрастирует с чёрной «шапочкой» на голове. Мощный клюв заканчивается крючком. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/117.jpg",
       audio:
-        "https://my-files.su/Save/q0yd7f/dolgie-kriki-dvuh-ptic-7201-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/dolgie-kriki-dvuh-ptic-7201-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -280,7 +282,7 @@ const myBirdsData = [
         "Птица компактного телосложения, отличается от черноголового чекана белой «бровью» и основанием хвоста иной окраски. Выражен половой диморфизм: самец имеет буровато-чёрное оперение головы, щёк, спины и крыльев, в то время как горло и грудь у него оранжево-рыжие; самка более светлая, «бровь» у неё бледнее.",
       image: "https://www.ebirds.ru/images/large/200.jpg",
       audio:
-        "https://my-files.su/Save/plftdw/chekan-lugovoy-golos-1701-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/chekan-lugovoy-golos-1701-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -289,7 +291,7 @@ const myBirdsData = [
       description:
         "Нырковая утка с ярко выраженным половым диморфизмом: у самца чёрная, с зелёным блеском голова с круглым белым украшающим пятном между глазом и клювом, шея и грудь белые, спина и хвост чёрные; у самки голова и шея шоколадно-бурого цвета, их отделяет от серой грудки яркий белый воротничок.",
       image: "https://www.ebirds.ru/images/large/47.jpg",
-      audio: "https://my-files.su/Save/wphtj5/gogol-golos-329-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/gogol-golos-329-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -299,7 +301,7 @@ const myBirdsData = [
         "Крупная птица с ярко выраженным половым диморфизмом: для самца характерны пёстрый наряд, тонкий и длинный, иногда более 50 см хвост, голова и шея переливчато-зелёною цвета, контрастирующие с красными мясистыми наростами на голой коже вокруг глаз, окраска самки буровато-серая с тёмными пестринами, хвост короче, чем у самца.",
       image: "https://www.ebirds.ru/images/large/84.jpg",
       audio:
-        "https://my-files.su/Save/r75184/fazan-obyknovennyy-golos-5927-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/fazan-obyknovennyy-golos-5927-onbird.ru.mp3",
     },
   ],
   [
@@ -311,7 +313,7 @@ const myBirdsData = [
         "Легко узнаётся по удлинённой форме тела и разноцветному оперению: темя и затылок каштановые, горло жёлтое, крылья и хвост зеленовато-голубые; спина и плечи золотисто-рыжие, через глаз идёт чёрная полоса Клюв длинный и изогнутый. Лапы короткие, а средние рулевые перья длиннее остальных. Общий тон оперения самки более зеленоватый, окраска однороднее.",
       image: "https://www.ebirds.ru/images/large/161.jpg",
       audio:
-        "https://my-files.su/Save/15w511/schurka-zolotistaya-golos-155-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/schurka-zolotistaya-golos-155-onbird.ru.mp3",
     },
     {
       id: 2,
@@ -321,7 +323,7 @@ const myBirdsData = [
         "Птица размером с сойку. Определяется по крупной голове, клюву, похожему на клюв врановых, и разноцветному оперению с преобладанием голубого, зелёного, каштанового и фиолетового цветов. Полового диморфизма нет.",
       image: "https://www.ebirds.ru/images/large/162.jpg",
       audio:
-        "https://my-files.su/Save/e76qcr/sizovoronka-golos-1633-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/sizovoronka-golos-1633-onbird.ru.mp3",
     },
     {
       id: 3,
@@ -331,7 +333,7 @@ const myBirdsData = [
         "Маленькая птица пропорционального телосложения, с узким длинным хвостом. Самец имеет аспидно-бурый верх и низ винной окраски, брюшко светло-серое, горло с белыми пестринами Отличается красными кольцом вокруг глаза и радужной оболочкой Самка несколько бледнее. У обоих полов клюв жёлтый с чёрным кончиком, лапы буро-оранжевые, а крылья короткие и закруглённые.",
       image: "https://www.ebirds.ru/images/large/221.jpg",
       audio:
-        "https://my-files.su/Save/0atna8/slavka-zavirushka-golos-450-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/slavka-zavirushka-golos-450-onbird.ru.mp3",
     },
     {
       id: 4,
@@ -340,7 +342,7 @@ const myBirdsData = [
       description:
         "Легко узнаваемый по форме тела и окраске оперения вид. Хвост и крылья с явными чередующимися чёрными и белыми полосами. Голова украшена веерообразным хохолком. Клюв длинный и тонкий, слегка загнутый книзу. Половой диморфизм не выражен.",
       image: "https://www.ebirds.ru/images/large/163.jpg",
-      audio: "https://my-files.su/Save/jqa7k5/udod-golos-200-onbird.ru.mp3",
+      audio: "http://kino-server.myjino.ru/mp3/udod-golos-200-onbird.ru.mp3",
     },
     {
       id: 5,
@@ -350,7 +352,7 @@ const myBirdsData = [
         "Ушастая сова по строению сходна с болотной со вой, но «ушки» у неё гораздо длиннее. Общий тон оперения рыжевато-жёлтый и серо-коричневый. Всё тело густо исчерчено продольными пестринами и пятнами тёмного цвета, низ к то муже имеет тонкий струйчатый поперечный рисунок. Лицевой диск хорошо выражен, одно тонный.",
       image: "https://www.ebirds.ru/images/large/154.jpg",
       audio:
-        "https://my-files.su/Save/qli4jg/sova-ushastaya-golos-4638-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/sova-ushastaya-golos-4638-onbird.ru.mp3",
     },
     {
       id: 6,
@@ -360,7 +362,7 @@ const myBirdsData = [
         "Чуть крупнее обыкновенной овсянки, оперение без явных пестрин. Выражен половой диморфизм: самец легко узнаётся по чёрной голове, контрастирующей с ярко-жёлтыми горлом и оставшейся частью низа тела; самка буроватая, с узкими тёмными продольными пестринами на верхней стороне тела.",
       image: "https://www.ebirds.ru/images/large/289.jpg",
       audio:
-        "https://my-files.su/Save/xoeur0/ovsyanka-chernogolovaya-golos-679-onbird.ru.mp3",
+        "http://kino-server.myjino.ru/mp3/ovsyanka-chernogolovaya-golos-679-onbird.ru.mp3",
     },
   ],
 ];
