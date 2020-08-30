@@ -69,6 +69,10 @@ class App extends Component {
       if (selectItemId === randomBirdId) {
         if (!e.target.classList.contains("right")) {
           e.target.classList.add("right");
+          const audio = new Audio(
+            "https://soundslibmp3.ru/sounds/1587219169_good-error-ans-16.mp3"
+          );
+          audio.play();
           this.setState({
             rightAnswer: true,
             score: score + amountOfPoints,
