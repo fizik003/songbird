@@ -1,0 +1,7 @@
+.btn-active{
+  background-color: #00bc8c;
+}
+
+.btn-active:hover{
+  background-color: #0cf8bd;
+}
